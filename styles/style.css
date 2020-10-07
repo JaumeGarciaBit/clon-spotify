@@ -1,8 +1,217 @@
-/*
-Colors:
+@font-face
+{
+    font-family: mainFont;
+    src:url("../fonts/The\ Refinery\ -\ Clarika\ Grotesque\ Medium.otf");
+}
+@font-face
+{
+    font-family: smallFont;
+    src:url("../fonts/Alessio\ Laiso\ Type\ -\ Lagu\ Sans\ Light.otf");
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+body
+{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    background-color: black;
+}
+h1, h2, h3
+{
+    font-family: mainFont; 
+}
+p
+{
+    font-family: smallFont;
+}
 
-*/
+header
+{
+    display:flex;
+    position: fixed;
+
+    height:50px;
+    width:800px;
+    background-color: white;
+    justify-content: space-between;
+}
+.top
+{
+	height:500px;
+	width:100%;
+    background-image: url("../images/landing.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.top>.imageText
+{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    height: 100%;
+    width: 55%;
+}
+.top>.imageText>h1
+{
+    font-weight: normal;
+    font-size: 3em;
+    color:white;
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+.top>.imageText>p
+{
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: -5px;
+
+    color: white;
+    opacity: 0.5;
+
+}
+
+header>nav
+{
+    display:flex;
+	justify-content: space-around;
+	align-items:center;
+    margin-right: 20px;
+    
+	height:100%;
+	width:250px;
+}
+header>img
+{
+    width: auto;
+    height: 70%;
+    margin: 5px;
+    margin-left: 20px;
+}
+nav>a
+{
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+}
+nav>a:hover
+{
+    color: mediumseagreen;
+}
+
+
+.mid
+{	
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+	height:350px;
+	width:100%;
+	background-color: white;
+}
+.mid>div
+{
+	display:flex;
+	justify-content: space-around;
+    align-items: center;
+	
+	height:80%;
+	width:100%;	
+}
+.mid>h2
+{
+    text-align: center;
+    margin-bottom: -30px;
+}
+.mid>div>content
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+
+	width: 200px;
+	height: 200px;
+}
+.mid>div>content>img
+{
+    margin-top: 30px;
+    width: 40%;
+    height: auto;
+}
+.mid>div>content>h3
+{
+    color:mediumseagreen;
+    margin-bottom: -10px;
+}
+.mid>div>content>p
+{
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.bot
+{
+	height:500px;
+	width:100%;
+    background-color: white;
+    color:white;
+}
+
+.bot>content
+{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+
+    margin-right: 2%;
+    margin-left: 2%;
+    
+    background-color: mediumseagreen;
+    background-image: url("../images/spotify-icon-white.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 10%; 
+
+	height:100%;
+}
+.bot>content>div
+{
+	height:90%;
+	width:40%;
+
+}
+.bot>content>div>hr
+{
+    margin-top: -20px;
+    border: 1px solid;
+    margin-right: 10px;
+} 
+.bot>content>div>h3
+{
+    font-size: normal;
+}
+.bot>content>div>p
+{
+    font-size: smaller;
+    margin-right: 30%;
+    opacity: 0.5;
+} 
+.bot>content>div:nth-child(2)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot>content>div>img
+{
+    height: 90%;
+}
